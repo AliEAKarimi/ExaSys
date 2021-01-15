@@ -1,7 +1,8 @@
 # ExaSys
 
 > ExaSys stands for Examination System. <br />
-In summary the program .... has two parts, student and administrator.
+
+In summary the ExaSys program has two parts, student and administrator.
 
 ###### Demo of ExaSys project
 * Main Page![MainPage](https://i.ibb.co/F0J6xjq/MainPage.png)
