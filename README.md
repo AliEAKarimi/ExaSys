@@ -7,7 +7,7 @@
 * [Manager login page](https://ibb.co/897ynK6)
 * [Manager sign up page](https://ibb.co/0yZ22Lt)
 * [Student panel and current exams section](https://ibb.co/QH2Z4dV)
-* [Manager panel]()
+* [Manager panel and Exams Management](https://ibb.co/b1NFMcK)
 * [Create an exam in the manager panel(part1)](https://ibb.co/JrhPYqP)
 * [Create an exam in the manager panel(part2)](https://ibb.co/N6J76FL)
 * [Create an exam in the manager panel(part3)](https://ibb.co/c6sjtWz)
