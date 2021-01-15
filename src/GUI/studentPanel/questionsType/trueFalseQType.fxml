@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.studentPanel.questionsType.TrueFalseQTypeController">
+   <children>
+      <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextArea fx:id="questionTextTA" editable="false" maxHeight="200.0" wrapText="true" VBox.vgrow="ALWAYS" />
+            <RadioButton fx:id="trueRB" mnemonicParsing="false" prefHeight="21.0" prefWidth="78.0" text="صحیح" />
+            <RadioButton fx:id="falseRB" mnemonicParsing="false" text="غلط" />
+            <Separator style="-fx-background-color: #9C27B0;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

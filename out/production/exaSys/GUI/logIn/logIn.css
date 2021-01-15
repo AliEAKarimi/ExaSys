@@ -1,0 +1,35 @@
+.root{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+}
+
+@font-face{
+    src: url("../../../resource/fonts/B_NAZANIN/B-NAZANIN.TTF");
+}
+.text-field, .textt, .button{
+    -fx-font-family: "B Nazanin";
+    -fx-font-size: 18;
+    /*-fx-font-style: bold;*/
+}
+
+.textt{
+    -fx-fill: #2196F3;
+}
+
+.image-view-manager{
+    -fx-image: url("../../../../../resource/image/management2.png");
+}
+
+.image-view-student{
+    -fx-image: url("../../../../../resource/image/student.png");
+}
+
+.button{
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-hint{
+    -fx-fill: #D71212;
+    -fx-font-family: "B Nazanin";
+    -fx-font-size: 13;
+}

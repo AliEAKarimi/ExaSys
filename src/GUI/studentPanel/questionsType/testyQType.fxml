@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.studentPanel.questionsType.TestyQTypeController">
+   <children>
+      <VBox alignment="TOP_RIGHT" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextArea fx:id="questionTextTA" editable="false" nodeOrientation="RIGHT_TO_LEFT" wrapText="true" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="یکی از گزینه های زیر را انتخاب کنید.">
+               <VBox.margin>
+                  <Insets bottom="8.0" top="8.0" />
+               </VBox.margin>
+            </Text>
+            <RadioButton fx:id="choice1RB" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT">
+               <graphic>
+                  <MaterialDesignIconView glyphName="NUMERIC_1_BOX_OUTLINE" size="25" />
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="choice2RB" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT">
+               <graphic>
+                  <MaterialDesignIconView glyphName="NUMERIC_2_BOX_OUTLINE" size="25" />
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="choice3RB" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT">
+               <graphic>
+                  <MaterialDesignIconView glyphName="NUMERIC_3_BOX_OUTLINE" size="25" />
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="choice4RB" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" textAlignment="RIGHT">
+               <graphic>
+                  <MaterialDesignIconView glyphName="NUMERIC_4_BOX_OUTLINE" size="25" />
+               </graphic>
+            </RadioButton>
+            <Separator style="-fx-background-color: #9C27B0;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

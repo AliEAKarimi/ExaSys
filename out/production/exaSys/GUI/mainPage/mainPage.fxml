@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="777.0" prefWidth="1035.0" styleClass="root-pane" stylesheets="@mainPage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.mainPage.MainPage">
+   <children>
+      <BorderPane prefHeight="747.0" prefWidth="784.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <top>
+            <AnchorPane prefHeight="25.0" prefWidth="752.0" BorderPane.alignment="BOTTOM_LEFT">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="26.0" prefWidth="752.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="firefox-icon">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <MaterialDesignIconView fill="#cd6666" glyphName="REPLAY" size="25" wrappingWidth="31.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow height="13.995000000000001" radius="6.108750000000001" width="12.44" />
+                           </effect>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fill="#cd6666" glyphName="HOME" size="25">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow height="43.54" radius="18.16" width="31.1" />
+                           </effect>
+                        </MaterialDesignIconView>
+                        <TextField fx:id="addressTF" maxWidth="668.0" minWidth="400.0" opacity="0.43" prefHeight="26.0" prefWidth="668.0" promptText="Enter an address" styleClass="search-t-f" text="http://">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <OctIconView fx:id="searchIc" fill="#cd6666" glyphName="SEARCH" onMouseClicked="#searchBtnAction" size="25">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow height="10.69" radius="5.2825" width="12.44" />
+                           </effect>
+                        </OctIconView>
+                        <Region prefHeight="31.0" prefWidth="210.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Region>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="8.0" left="22.0" right="8.0" top="8.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+         <opaqueInsets>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <OctIconView fx:id="plusIcon" fill="#cd6666" glyphName="PLUS" onMouseClicked="#plusBtnAction" size="30" wrappingWidth="22.0">
+                     <effect>
+                        <InnerShadow height="12.44" radius="8.0525" width="21.77" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="2.0" top="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </OctIconView>
+                  <AnchorPane fx:id="exaSysAP" prefHeight="689.0" prefWidth="1004.0" style="-fx-background-color: #F3EDF4;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TabPane fx:id="tabPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="526.0" prefWidth="768.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab fx:id="googleTab" closable="false" onSelectionChanged="#googleWebPage" styleClass="google-tab" text="G O O G L E">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="768.0">
+                                       <children>
+                                          <WebView fx:id="googleWebView" layoutY="26.0" prefHeight="469.0" prefWidth="766.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab fx:id="facebookTab" closable="false" onSelectionChanged="#facebookWebPage" styleClass="facebook-tab" text="F A C E B O O K">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <WebView fx:id="facebookWebView" layoutY="25.0" prefHeight="469.0" prefWidth="766.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab fx:id="youtubeTab" closable="false" onSelectionChanged="#youtubeWebPage" styleClass="youtube-tab" text="Y O U T U B E">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <WebView fx:id="youtubeWebView" prefHeight="634.0" prefWidth="987.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab fx:id="exaSysTab" closable="false" onSelectionChanged="#exaSysPage" styleClass="exaSys-tab" text="E X A S Y S">
+                                <content>
+                                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="exaSys-a-p">
+                                       <children>
+                                          <BorderPane fx:id="exaSysBorderPane" prefHeight="457.0" prefWidth="912.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <top>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="582.0" styleClass="main-bar-h-b" BorderPane.alignment="CENTER">
+                                                   <children>
+                                                      <Region maxWidth="1.7976931348623157E308" minWidth="271.0" prefHeight="32.0" prefWidth="159.0">
+                                                         <HBox.margin>
+                                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                         </HBox.margin>
+                                                      </Region>
+                                                      <MenuBar minWidth="328.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="469.0" styleClass="exaSys-menu-bar">
+                                                         <menus>
+                                                            <Menu mnemonicParsing="false" onAction="#mainPageMenuAction" text="صفحه اصلی">
+                                                               <items>
+                                                                  <MenuItem mnemonicParsing="false" onAction="#mainPageMenuAction" text="صفحه اصلی" />
+                                                               </items></Menu>
+                                                            <Menu mnemonicParsing="false" text="ورود به حساب کاربری">
+                                                               <items>
+                                                                  <MenuItem mnemonicParsing="false" onAction="#studentPanel" text="پنل دانشجو" />
+                                                                  <MenuItem mnemonicParsing="false" onAction="#managerPanel" text="پنل مدیریت" />
+                                                               </items>
+                                                            </Menu>
+                                                            <Menu mnemonicParsing="false" text="راهنمایی" />
+                                                         </menus>
+                                                         <HBox.margin>
+                                                            <Insets bottom="8.0" right="8.0" top="8.0" />
+                                                         </HBox.margin>
+                                                      </MenuBar>
+                                                   </children>
+                                                </HBox>
+                                             </top>
+                                             <center>
+                                                <ScrollPane fx:id="exaSysScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #882657;" styleClass="exaSys-scroll-pane" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+                                                   <content>
+                                                      <AnchorPane prefHeight="566.0" prefWidth="970.0" style="-fx-border-color: #000000;" styleClass="exaSys-a-p-in-scroll-pane">
+                                                         <children>
+                                                            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" styleClass="exaSys-first-image" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox prefHeight="100.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <ImageView fitHeight="1000.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true" styleClass="exaSys-second-image">
+                                                                           <image>
+                                                                              <Image url="@../../../resource/image/info01.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                        <VBox alignment="CENTER" prefHeight="1000.0" prefWidth="1000.0" spacing="20.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="خدمات سامانه آزمون آنلاین ویژه دانش جویان" textAlignment="CENTER" underline="true" wrappingWidth="440.6708984375" VBox.vgrow="ALWAYS">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="24.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="امکان شرکت در آزمون های آنلاین" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="امکان شرکت در آزمون های تشریحی" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="امکان شرکت در آزمون های تستی" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="امکان شرکت در آزمون های صحیح غلط" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox prefHeight="100.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <VBox alignment="CENTER" prefHeight="1000.0" prefWidth="1000.0" spacing="20.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="خدمات سامانه آزمون آنلاین ویژه اساتید" textAlignment="CENTER" underline="true" wrappingWidth="440.6708984375" VBox.vgrow="ALWAYS">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="24.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="امکان ساخت آزمون آنلاین" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="پشتیبانی از 3 تیپ سوال" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="تشریحی-تستی-صحیح و غلط" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="امکان تصحیح آزمون و مشاهده نمودار نتایج" textAlignment="CENTER" wrappingWidth="440.6708984375">
+                                                                                 <font>
+                                                                                    <Font size="25.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                           </children>
+                                                                        </VBox>
+                                                                        <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" styleClass="exaSys-third-image">
+                                                                           <image>
+                                                                              <Image url="@../../../resource/image/info02.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </center>
+                                          </BorderPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

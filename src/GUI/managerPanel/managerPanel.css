@@ -1,0 +1,26 @@
+
+
+.background-image
+{
+    -fx-image: url('../../../../../resource/purple-background2.jpg');
+}
+
+.main-menu
+{
+    -fx-background-color: #FFFFFF;
+}
+
+.page-title
+{
+    -fx-background-color: #9C27B0;
+    -fx-text-inner-color: #FFFFFF;
+}
+
+.root-pane
+{
+    -fx-background-color: #E3E3E3;
+}
+
+.button{
+    -fx-background-color: #FFFFFF;
+}

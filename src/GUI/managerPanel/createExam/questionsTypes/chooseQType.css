@@ -1,0 +1,34 @@
+@font-face{
+    src: url("../../../../../../resource/fonts/B_NAZANIN/B-NAZANIN.TTF");
+}
+
+.root{
+    -fx-font-family: "B Nazanin";
+    -fx-font-size: 18;
+    -fx-background-radius: 20;
+    -fx-background-color: #DEF5FF;
+}
+
+.buttons{
+    -fx-background-color: #7CD1F9;
+    -fx-text-fill: #FFFFFF;
+}
+
+.cancel-button{
+    -fx-background-color: #D71212;
+    -fx-text-fill: #000000;
+}
+
+anchor-pane{
+    -fx-background-radius: 20;
+}
+
+.h-box{
+    -fx-background-color: #C0C6EA;
+    -fx-background-radius: 20;
+}
+
+.v-box{
+    -fx-background-color: #CAE1FC;
+    -fx-background-radius: 20;
+}

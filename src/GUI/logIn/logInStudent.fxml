@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="changeableAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="585.0" styleClass="root" stylesheets="@logIn.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.logIn.LogInStudent">
+   <children>
+      <VBox alignment="CENTER" layoutX="141.0" layoutY="56.0" prefHeight="299.0" prefWidth="318.0" spacing="10.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <children>
+            <Region prefHeight="140.0" prefWidth="533.0" />
+            <ImageView fitHeight="185.0" fitWidth="524.0" pickOnBounds="true" preserveRatio="true" styleClass="image-view-student" />
+            <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="29.0" prefWidth="318.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="52.0" prefWidth="532.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <MaterialDesignIconView glyphName="ACCOUNT" size="25" />
+                              <TextField fx:id="usernameTF" prefHeight="26.0" prefWidth="273.0" promptText="نام کاربری" />
+                           </children>
+                        </HBox>
+                        <Text fx:id="hintUsernameT" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" wrappingWidth="246.6708984375" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="29.0" prefWidth="318.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="31.0" prefWidth="533.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="159.0">
+                           <children>
+                              <MaterialDesignIconView glyphName="LOCK" size="25" />
+                              <PasswordField fx:id="passwordTF" prefHeight="26.0" prefWidth="273.0" promptText="رمز عبور" />
+                           </children>
+                        </HBox>
+                        <Text fx:id="hintPasswordT" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" wrappingWidth="245.6708984375" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="533.0">
+               <children>
+                  <JFXButton onAction="#logIn" prefHeight="38.0" prefWidth="532.0" text="ورود">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="244.0" prefHeight="27.0" prefWidth="262.0" spacing="20.0">
+               <children>
+                  <Text fx:id="forgotPasswordT" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textt" text="فراموشی رمز عبور">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text layoutX="148.0" layoutY="25.0" onMouseClicked="#signUp" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textt" text="ثبت نام کنید">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </HBox>
+            <Region prefHeight="36.0" prefWidth="564.0">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </Region>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,22 @@
+@font-face{
+    src: url("../../../../../../resource/fonts/B_NAZANIN/B-NAZANIN.TTF");
+}
+
+
+
+
+.root-pane{
+       -fx-background-color: #C0C6EA;
+       -fx-font-family: "B Nazanin";
+}
+
+.buttons{
+    -fx-background-color: #7CD1F9;
+}
+
+.back-button{
+    -fx-background-color: #D71212;
+    -fx-text-fill: #FFFFFF;
+
+}
+

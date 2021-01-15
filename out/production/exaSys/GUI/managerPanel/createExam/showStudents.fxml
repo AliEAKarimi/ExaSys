@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root-pane" stylesheets="@showStudents.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.managerPanel.createExam.ShowStudentsController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <VBox alignment="CENTER" spacing="2.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="15.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="backBtn" onAction="#backBtnAction" styleClass="back-button" text="برگشت" />
+                        <JFXButton fx:id="fromExcelBtn" contentDisplay="RIGHT" onAction="#fromExcelBtnAction" styleClass="buttons" text="از فایل excel">
+                           <graphic>
+                              <MaterialDesignIconView glyphName="FILE_EXCEL" size="25" />
+                           </graphic></JFXButton>
+                        <JFXButton fx:id="manualBtn" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" onAction="#manualBtnAction" styleClass="buttons" text="دستی">
+                           <graphic>
+                              <MaterialDesignIconView glyphName="KEYBOARD" size="25" />
+                           </graphic></JFXButton>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="اضافه کردن دانشجو : " textAlignment="RIGHT" wrappingWidth="105.6708984375" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0">
+                     <children>
+                        <Text fx:id="hintT" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="532.0" HBox.hgrow="ALWAYS" />
+                        <JFXButton fx:id="finalConfirmBtn" onAction="#finalConfirmBtnAction" style="-fx-background-color: #4CAF50;" styleClass="buttons" text="ثبت نهایی" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

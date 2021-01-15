@@ -1,0 +1,26 @@
+@font-face{
+    src: url("../../../../../../resource/fonts/B_NAZANIN/B-NAZANIN.TTF");
+}
+
+
+.title-button{
+    -fx-background-color: #7CD1F9;
+    -fx-font-family: "B Nazanin";
+}
+
+.hint-text{
+    -fx-fill: #D71212;
+    -fx-font-size: 13;
+}
+
+.delete-button, .cancel-button{
+    -fx-background-color: #D71212;
+}
+
+.edit-button, .add-image-button{
+    -fx-background-color: #858585;
+}
+
+.end-edit-button, .confirm-button{
+    -fx-background-color: #4CAF50;
+}

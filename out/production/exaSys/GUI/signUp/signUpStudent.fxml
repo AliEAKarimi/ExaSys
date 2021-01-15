@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="changeableAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="585.0" styleClass="root" stylesheets="@signUp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.signUp.SignUpStudent">
+   <children>
+      <VBox layoutX="141.0" layoutY="56.0" prefHeight="299.0" prefWidth="318.0" spacing="20.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="GRADUATION_CAP" size="300" textAlignment="CENTER" wrappingWidth="390.1428527832031" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="29.0" prefWidth="318.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="fNameTF" prefHeight="26.0" prefWidth="126.0" promptText="نام" />
+                        <Text fx:id="hintFNameT" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" wrappingWidth="221.6708984375">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="31.0" prefWidth="238.0">
+                     <children>
+                        <TextField fx:id="lNameTF" promptText="نام خانوادگی" />
+                        <Text fx:id="hintLNameT" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" wrappingWidth="236.6708984375">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="563.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="studentIdTF" alignment="CENTER_RIGHT" promptText="شماره دانشجویی" />
+                        <Text fx:id="hintStudentNumberT" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" textAlignment="RIGHT" wrappingWidth="236.6708984375">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="563.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="userNameTF" alignment="CENTER_RIGHT" promptText="نام کاربری" />
+                        <Text fx:id="hintUserNameT" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" textAlignment="RIGHT" wrappingWidth="236.6708984375">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="29.0" prefWidth="318.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="45.0" prefWidth="197.0">
+                     <children>
+                        <PasswordField fx:id="passwordTF" prefHeight="26.0" prefWidth="175.0" promptText="رمز عبور" />
+                        <Text fx:id="hintPasswordT1" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" wrappingWidth="200.6708984375">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="45.0" prefWidth="201.0">
+                     <children>
+                        <PasswordField fx:id="passwordConfirmTF" prefHeight="31.0" prefWidth="217.0" promptText="تکرار رمز عبور" />
+                        <Text fx:id="hintPasswordT2" fill="#d71212" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hint" wrappingWidth="199.6708984375">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="27.0" prefWidth="262.0">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" onAction="#singUpStudent" prefHeight="35.0" prefWidth="534.0" text="ثبت نام" textAlignment="CENTER" />
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="244.0" prefHeight="27.0" prefWidth="262.0" spacing="20.0">
+               <children>
+                  <Text layoutX="148.0" layoutY="25.0" onMousePressed="#logIn" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textt" text="حساب کاربری دارید؟">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

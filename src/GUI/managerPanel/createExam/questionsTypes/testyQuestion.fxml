@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" stylesheets="@questionsTypes.css" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.managerPanel.createExam.questionsTypes.testyQuestionController">
+   <content>
+      <AnchorPane fx:id="anchorPane" stylesheets="@questionsTypes.css">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="20.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="RIGHT" disable="true" styleClass="title-button" text="سوال تستی">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="QRCODE" size="25" />
+                     </graphic>
+                  </JFXButton>
+                  <HBox alignment="CENTER_RIGHT">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="متن سوال را وارد کنید." textAlignment="RIGHT" wrappingWidth="160.6708984375">
+                           <HBox.margin>
+                              <Insets bottom="8.0" right="8.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <JFXTextArea fx:id="questionTextTA" minHeight="219.0" nodeOrientation="RIGHT_TO_LEFT">
+                     <VBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <HBox alignment="CENTER_RIGHT">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="پاسخ ها را وارد کنید و گزینه درست را علامت بزنید." textAlignment="RIGHT" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" spacing="8.0">
+                     <children>
+                        <MaterialDesignIconView glyphName="DICE_1" size="30" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </MaterialDesignIconView>
+                        <TextArea fx:id="switch1TA" prefHeight="20.0" prefWidth="538.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" spacing="8.0">
+                     <children>
+                        <MaterialDesignIconView glyphName="DICE_2" size="30" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </MaterialDesignIconView>
+                        <TextArea fx:id="switch2TA" prefHeight="20.0" prefWidth="553.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" spacing="8.0">
+                     <children>
+                        <MaterialDesignIconView glyphName="DICE_3" size="30" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </MaterialDesignIconView>
+                        <TextArea fx:id="switch3TA" prefHeight="20.0" prefWidth="548.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" spacing="8.0">
+                     <children>
+                        <MaterialDesignIconView glyphName="DICE_4" size="30" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </MaterialDesignIconView>
+                        <TextArea fx:id="switch4TA" maxHeight="20.0" prefHeight="20.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="596.0" spacing="2.0">
+                     <children>
+                        <JFXButton fx:id="confirmBtn" onAction="#confirmBtnAction" styleClass="confirm-button" text="ثبت" />
+                        <JFXButton fx:id="cancelBtn" onAction="#cancelBtnAction" styleClass="cancel-button" text="انصراف" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" spacing="2.0">
+                     <children>
+                        <TextField fx:id="questionTimeTF" alignment="CENTER" promptText="مدت زمان سوال(دقیقه)" />
+                        <TextField fx:id="gradeTF" alignment="CENTER" promptText="نمره سوال" />
+                        <Region prefHeight="31.0" prefWidth="277.0" HBox.hgrow="ALWAYS" />
+                        <JFXButton fx:id="endEditBtn" contentDisplay="GRAPHIC_ONLY" onAction="#endEditBtnAction" styleClass="end-edit-button" text="اتمام ویرایش">
+                           <graphic>
+                              <MaterialDesignIconView glyphName="CHECKBOX_MARKED_CIRCLE" size="20" />
+                           </graphic></JFXButton>
+                        <JFXButton fx:id="editBtn" contentDisplay="RIGHT" onAction="#editBtnAction" styleClass="edit-button" text="ویرایش">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EDIT" size="20" />
+                           </graphic></JFXButton>
+                        <JFXButton fx:id="deleteBtn" contentDisplay="RIGHT" onAction="#deleteBtnAction" styleClass="delete-button" text="حذف">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TIMES_CIRCLE" size="20" />
+                           </graphic></JFXButton>
+                     </children>
+                  </HBox>
+                  <Separator style="-fx-background-color: #9C27B0;" />
+                  <Text fx:id="hintT" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="hint-text" textAlignment="CENTER" wrappingWidth="863.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

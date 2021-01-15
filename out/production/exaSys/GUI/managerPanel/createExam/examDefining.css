@@ -1,0 +1,40 @@
+.first-title
+{
+    -fx-border-color: transparent transparent #A2A2A2 transparent;
+}
+
+
+.define-exam-a-p{
+        -fx-background-color: #FFFFFF;
+        -fx-background-radius: 10;
+}
+
+.exam-setting-a-p{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+}
+
+.first-separator{
+    -fx-background-color: #7800A3;
+}
+
+.next-step-button{
+    -fx-background-color: #4CAF50;
+}
+
+.past-step-button{
+    -fx-background-color: #607D8B;
+}
+
+.cancel-button{
+    -fx-background-color: #D71212;
+}
+
+.confirm-button{
+    -fx-background-color: #4CAF50;
+}
+
+.hint-text{
+    -fx-fill: #D71212;
+    -fx-font-size: 13;
+}

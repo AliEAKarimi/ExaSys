@@ -1,0 +1,19 @@
+@font-face{
+    src: url("../../../../../../resource/fonts/B_NAZANIN/B-NAZANIN.TTF");
+}
+
+.root-pane{
+       -fx-font-family: "B Nazanin";
+       -fx-font-size: 18;
+       -fx-background-radius: 40;
+       -fx-background-color: #C0C6EA;;
+}
+
+.button{
+    -fx-background-color: #7CD1F9;
+    -fx-text-fill: #FFFFFF;
+}
+
+.title-text{
+    -fx-font-size: 40;
+}

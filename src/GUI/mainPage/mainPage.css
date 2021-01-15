@@ -1,0 +1,96 @@
+@font-face{
+    src: url("../../../../../resource/fonts/B_NAZANIN/B-NAZANIN.TTF");
+}
+.button{
+    -fx-background-color: #9C27B0;
+}
+.google-tab{
+    -fx-background-color: #008400;
+    -fx-font-family:  Perpetua;
+    -fx-font-size: 15;
+    -fx-color: red;
+    -fx-font-style: Italic;
+}
+
+.facebook-tab{
+    -fx-background-color: #1658DA;
+    -fx-font-family:  Perpetua;
+    -fx-font-size: 15;
+    -fx-color: red;
+    -fx-font-style: Italic;
+}
+
+.youtube-tab{
+    -fx-background-color: #F90000;
+    -fx-font-family:  Perpetua;
+    -fx-font-size: 15;
+    -fx-color: red;
+    -fx-font-style: Italic;
+}
+
+.exaSys-tab{
+    -fx-background-color: #79DEF7;
+    -fx-font-family:  Perpetua;
+    -fx-font-size: 15;
+    -fx-color: red;
+    -fx-font-style: Italic;
+}
+
+.root-pane{
+    -fx-background-color: #0C0C0D;
+}
+
+.firefox-icon{
+    -fx-image: url('../../../../../resource/Firefox-icon.png');
+}
+
+.main-bar-h-b{
+    -fx-background-color: #E0065D;
+    -fx-background-radius: 10;
+    -fx-border-color: #3F0047;
+}
+
+.exaSys-a-p{
+    -fx-background-color: #882657;
+}
+
+.menu-bar{
+    -fx-background-color: inherit;
+}
+
+.exaSys-menu-bar .label{
+    -fx-font-family: "B Nazanin";
+    -fx-font-size: 17;
+}
+.exaSys-menu-bar .menu ,  .menu-item, .context-menu{
+        -fx-background-color: #E0065D;
+}
+.exaSys-menu-bar .menu .menu-item {
+    -fx-border-color: #3F0047;
+}
+
+.exaSys-scroll-pane{
+    -fx-background-color: #882657;
+}
+
+.exaSys-a-p-in-scroll-pane{
+    -fx-background-color: #882657;
+}
+
+.texts{
+    -fx-fill: #FFFFFF;
+    -fx-font-family: "B Nazanin";
+    -fx-font-size: 30;
+}
+.exaSys-first-image{
+    -fx-image: url('../../../../../resource/image/hero-main.png');
+}
+
+.exaSys-second-image{
+    -fx-image: url('../../../../../resource/image/info01.png');
+}
+
+.exaSys-third-image{
+    -fx-image: url('../../../../../resource/image/info02.png');
+}
+
