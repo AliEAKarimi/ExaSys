@@ -7,7 +7,7 @@
 * [Manager sign up page](https://ibb.co/0yZ22Lt)
 * ExaSys tab inside main page ![ExaSys tab inside MainPage](https://i.ibb.co/8zpDfzW/Exa-Sys-Tab.png)
 * Student panel and current exams section ![Student panel and current exams section](https://i.ibb.co/6t32kBS/Student-Panel-And-Current-Exams-Section.png)
-* Manager panel and exams management ![Manager panel and Exams Management](https://ibb.co/b1NFMcK)
+* Manager panel and exams management ![Manager panel and Exams Management](https://i.ibb.co/p24QBYL/Exams-Management.png)
 * Create an exam in the manager panel(part11) ![Create an exam in the manager panel(part11)](https://i.ibb.co/6b3DWWp/Create-An-Exam-In-The-Manager-Panel-part11.png)
 * [Create an exam in the manager panel(part1)](https://ibb.co/JrhPYqP)
 * [Create an exam in the manager panel(part2)](https://ibb.co/N6J76FL)
