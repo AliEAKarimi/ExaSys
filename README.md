@@ -2,7 +2,11 @@
 
 > ExaSys stands for Examination System. <br />
 
-In summary the ExaSys program has two parts, student and administrator.
+In summary the ExaSys program has two parts, student and administrator. <br />
+
+After logging in, the administrator can create a test, add students to the test, and send the test to the students. And after the exam, correct the students' exam and send them feedback. <br />
+
+The student can also log in to his account and take the exams that assigned to him.And can see the previous tests and if the teacher has given feedback to them, he can also see the score that obtained.
 
 ###### Demo of ExaSys project
 * Main Page![MainPage](https://i.ibb.co/F0J6xjq/MainPage.png)
